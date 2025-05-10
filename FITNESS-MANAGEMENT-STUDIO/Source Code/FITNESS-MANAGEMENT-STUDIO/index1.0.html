@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fitness Studio</title>
+  <style>
+
+
+body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+    .left-panel, .right-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .left-panel {
+      background-image: url('ss.png');
+      background-size: 1000px 750px;
+    }
+    .right-panel {
+      background-image: url('ss2.png');
+      background-size: 1000px 750px;
+      text-align: left;
+    }
+    .login-form {
+      width: 100%;
+      max-width: 350px;
+    }
+    .login-form label {
+      font-size: 14px;
+      margin-top: 10px;
+      display: block;
+      color: black;
+    }
+    .login-form input[type="text"],
+    .login-form input[type="password"] {
+      width: 100%;
+      padding: 15px;
+      margin-top: 5px;
+      background: #d9d9d9;
+      border: none;
+      font-size: 20px;
+    }
+    .options {
+      display: flex;
+      align-items: center;
+      margin: 5px 0 10px;
+    }
+    .options input[type="checkbox"] {
+      margin-right: 8px;
+    }
+    .login-button-container {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 10px;
+    }
+    .login-form button {
+      padding: 10px 20px;
+      background-color: white;
+      border: none;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .login-form button:hover {
+      background-color: #f0f0f0;
+    }
+    .links {
+      margin-top: 10px;
+      text-align: left;
+    }
+    .links a {
+      font-size: 14px;
+      color: #d3e5f9;
+      text-decoration: underline;
+      display: block;
+      margin-top: 5px;
+    }
+    .logo {
+      width: 500px;
+      margin-bottom: 5px;
+    }
+    .logos {
+      width: 200px;
+      margin-bottom: 5px;
+    }
+    h1, h2 {
+      font-family: 'Lucida Sans', 'Lucida Grande', sans-serif;
+      color: #000;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    h2 {
+      font-size: 25px;
+    }
+    .error {
+      color: red;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <img src="logo.png" alt="Fitness Image" class="logo">
+      <h1>STUDIO</h1>
+    </div>
+
+    <div class="right-panel">
+      <h1>Ramon Magsaysay Memorial Colleges</h1>
+      <h2>General Santos City</h2>
+      <br>
+      <img src="high_quality_logo.png" alt="school-logo" class="logos">
+
+      <form class="login-form" action="index1.6.html" method="POST">
+        <label for="username">Username/Email</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <div class="options">
+          <input type="checkbox" id="stay-signed" name="stay_signed">
+          <label for="stay-signed">Stay signed in?</label>
+        </div>
+
+        <div class="login-button-container">
+          <button type="submit">Login</button>
+          
+        </div>
+
+        <div class="links">
+          <a href="#">Forget Password</a>
+          <a href="index1.1.html">Create Account</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

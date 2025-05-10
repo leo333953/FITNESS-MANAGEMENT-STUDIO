@@ -1,0 +1,110 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fitness Studio</title>
+  <link rel="stylesheet" href="jilah.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left-panel, .right-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left-panel {
+      background: linear-gradient(to bottom, #a3c4f3, white);
+    }
+
+    .right-panel {
+      background: linear-gradient(to bottom, #3b6ba7, #a3c4f3);
+      color: #fff;
+      text-align: center;
+    }
+
+    .logo {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+
+    .school-logo {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.5em;
+      letter-spacing: 2px;
+    }
+
+    .location {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    .button-group button {
+      width: 220px;
+      padding: 12px;
+      margin: 10px 0;
+      font-size: 16px;
+      background-color: #e0e0e0;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 4px;
+    }
+
+    .button-group button:hover {
+      background-color: #c0c0c0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <h1>FITNESS</h1>
+      <h2>STUDIO</h2>
+    </div>
+
+    <div class="right-panel">
+      <p class="location">General Santos City</p>
+
+      <div class="button-group">
+        <form action="index1.3.html" method="get">
+          <button type="submit">Student Athlete</button>
+        </form>
+        <form action="index1.4.html" method="get">
+          <button type="submit">Teachers / Instructors</button>
+        </form>
+        <form action="index1.6.html" method="get">
+          <button type="submit">Staff / Others</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
